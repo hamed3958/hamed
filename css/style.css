@@ -1,0 +1,46 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "MontserratAlternates";
+  src: url(../fonts/MontserratAlternates-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "MontserratAlternates";
+  src: url(../fonts/MontserratAlternates-Regular.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "MontserratAlternates";
+  src: url(../fonts/MontserratAlternates-Bold.ttf);
+  font-weight: 700;
+}
+
+body{
+  font-family: "MontserratAlternates";
+}
+
+:root{
+  --sormei: #2D4059;
+  --germez: #EA5455;
+  --narenji: #F07B3F;
+  --zard: #FFD460; 
+}
+
+.cover{
+  width: 100%;
+  height: 100vh;
+  background: url(../images/cover.jpg);
+  background-size:cover;
+}
+
+.cover > h1 {
+  font: 400;
+}
