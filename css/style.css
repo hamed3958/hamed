@@ -36,11 +36,18 @@ body{
 
 .cover{
   width: 100%;
-  height: 100vh;
+  height: 800px;
   background: url(../images/cover.jpg);
   background-size:cover;
+  background-attachment: fixed;
 }
 
-.cover > h1 {
-  font: 400;
+.titr {
+  font-weight: 700;
+  font-size: 100px;
+}
+
+.hamed-img{
+  width: 200px;
+  height: auto;
 }
