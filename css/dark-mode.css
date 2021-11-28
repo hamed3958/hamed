@@ -1,0 +1,59 @@
+[data-theme="dark"] {
+  background-color: #2d4059 !important;
+  color: #eee;
+}
+
+[data-theme="dark"] .bg-light {
+  background-color: #2d4059 !important;
+}
+
+[data-theme="dark"] .navbar-light .navbar-nav .nav-link {
+  color:  rgba(255, 255, 255, 0.55);
+}
+
+[data-theme="dark"] .nav-link:hover {
+  color: rgb(250, 250, 250) !important;
+}
+
+[data-theme="dark"] .titr-big {
+  color: #ea5455 ;
+}
+
+[data-theme="dark"] .titr-normal {
+  color: #FBFBFB ;
+}
+
+[data-theme="dark"] .titr-small {
+  color: #FBFBFB ;
+}
+
+[data-theme="dark"] .glass{
+  margin-top: 50px;
+  background: rgba(0, 0, 0, 0.18);
+  box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+  backdrop-filter: blur( 6px );
+  border-radius: 10px;
+  border: 1px solid rgba( 0, 0, 0, 0.18 );
+}
+
+[data-theme="dark"] .cover{
+  width: 100%;
+  height: auto;
+  background: url(../images/cover.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+[data-theme="dark"] .card {
+  background-color:var(--sormei);
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+
+[data-theme="dark"] .card:hover{
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 100%) !important;
+}
+
+[data-theme="dark"] .shadow {
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 30%) !important;
+}

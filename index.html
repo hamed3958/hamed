@@ -25,70 +25,76 @@
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="css/aos.css">
   <link rel="manifest" href="imag/site.webmanifest">
+  <link rel="stylesheet" href="css/dark-mode.css">
 </head>
 
 <body>
 
+  <!------------------------------------------- header ------------------------------------------------------->
+
   <header>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <!----------------------------------------------- navbar ------------------------------------------------------>
+
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
       <div class="container-fluid">
 
-        
-
-          <div class="col-md-10">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#"><i class="fas fa-home"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
-                </li>
-              </ul>
-
-            </div>
+        <div class="col-md-10">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"><i class="fas fa-home"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
           </div>
+        </div>
 
-          <div class="col-md-2 ">
-            <label class="float-end">
-              <input class='toggle-checkbox' type='checkbox'></input>
-              <div class='toggle-slot'>
-                <div class='sun-icon-wrapper'>
-                  <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"></div>
-                </div>
-                <div class='toggle-button'></div>
-                <div class='moon-icon-wrapper'>
-                  <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"></div>
-                </div>
+        <div class="col-md-2">
+          <label class="float-end me-2">
+            <input class='toggle-checkbox' type='checkbox' id="darkSwitch"></input>
+            <div class='toggle-slot'>
+              <div class='sun-icon-wrapper'>
+                <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"></div>
               </div>
-            </label>
-          </div>
-
-       
+              <div class='toggle-button'></div>
+              <div class='moon-icon-wrapper'>
+                <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"></div>
+              </div>
+            </div>
+          </label>
+        </div>
 
       </div>
 
     </nav>
 
-    <div class="cover">
+
+    <!-------------------------------------------- cover ------------------------------------------->
+
+    <div class="cover py-5">
       <div class="container">
         <div class="row">
-          <div class="col-md-12" data-aos="fade-up-right">
-            <h1 class="text-light mt-5 titr">this is <br>
-              <mark>Hamed Asadi Asl</mark> <br>
-              web site
-            </h1>
+          <div class="col-md-6 glass m-5 p-5" data-aos="fade-up-right">
+
+            <p class="titr-normal">Hi, I am</p>
+            <h1 class="titr-big">Hamed Asadi Asl.</h1>
+            <p class="titr-small">
+              < Front-end Web developer />
+            </p>
+
           </div>
         </div>
       </div>
@@ -96,26 +102,168 @@
 
   </header>
 
+  <!--------------------------------------------- main ---------------------------------------------------->
+
   <main>
 
-    <div class="container mt-5" id="about">
-      <div class="row">
-        <div class="col-md-6" data-aos="fade-right">
-          <h2>A bit about myself...</h2>
-          <p>Dear all, appreciate to visit my web page. I have a master degree in Civil Engineering ( geotechnical feild
-            ). I'm so interested in web development and web programming. Starting with HTML, CSS and JavaScript, I kept
-            putting much efforts on learning novel technologies in this respect. It will be my proud if you check and
-            view my sample projects reported in this page. Hope this website will make us getting in touch and
-            coolaborate.
-            Sincerely Yours,
-            Hamed</p>
+    <!---------------------------------------------- about ----------------------------------------------->
+
+    <div class="container my-5 d-flex align-items-center" id="about">
+      <div class="row mx-5 ">
+        <div class="col-md-8" data-aos="fade-right">
+          <h2 class="fw-bold mb-2">A bit about myself...</h2>
+          <p>Dear all, appreciate visiting my web page. I have a master degree in Civil Engineering (geotechnical
+            field). I'm so interested in web development. Starting with HTML, CSS and JavaScript, I kept putting many
+            efforts on learning novel technologies in this respect. It will be my proud if you check and view my sample
+            projects. Hope this website will make us getting in touch and collaborate. <br><br>
+            Sincerely Yours, <span class="fw-bold">Hamed</span></p>
         </div>
-        <div class="col-md-6" data-aos="fade-up-left">
-          <img src="images/hamed.jpg" alt="hamed asadi asl" class="hamed-img img-fluid rounded float-end">
+        <div class="col-md-4" data-aos="fade-up-left">
+          <img src="images/hamed.jpg" alt="hamed asadi asl" class="hamed-img img-fluid rounded float-end shadow">
         </div>
       </div>
     </div>
 
+    <!------------------------------------------------ porotfolio ------------------------------------------>
+
+    <div class="container my-5" id="portfolio">
+
+      <h2 class="fw-bold my-5" data-aos="fade-right">Portfolio</h2>
+
+      <div class="row ">
+
+        <!-------------------------------------------------- cards -------------------------------------------->
+
+        <!---------------------------------------------- card-1 ----------------------------------------------->
+        <div class="col-md-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-duration="1000">
+          <div class="card shadow">
+            <div class="ratio ratio-16x9">
+              <video autoplay loop muted>
+                <source src="video/hamed3958-smd.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title fw-bold mb-2">Social media dashboard with theme switche</h5>
+              <p class="card-text h5">Users could be able to :</p>
+              <ul>
+                <li>View the optimal layout for the site depending on their device's screen size</li>
+                <li>See hover states for all interactive elements on the page</li>
+                <li>Toggle color theme to their preference</li>
+                <li>On page load, the numbers are counted visually</li>
+              </ul>
+
+              <p class="card-text h5">Built with :</p>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>CSS Grid</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+
+            <div class="p-4 pt-0">
+              <a href="#" class="btn btn-outline-info d-block">Live site URL</a>
+            </div>
+
+          </div>
+        </div>
+
+        <!--------------------------------------- card-2 ------------------------------------------------------>
+        <div class="col-md-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-duration="1500">
+          <div class="card shadow">
+            <img src="images/faq-accordion-card.jpg" class="card-img-top" alt="faq-accordion-card">
+
+            <div class="card-body">
+              <h5 class="card-title fw-bold mb-2">The FAQ accordion card</h5>
+              <p class="card-text h5">Users could be able to :</p>
+              <ul>
+                <li>View the optimal layout for the component depending on their device's screen size</li>
+                <li>See hover states for all interactive elements on the page</li>
+                <li>Hide/Show the answer to a question when the question is clicked</li>
+              </ul>
+              <p class="card-text h5">Built with :</p>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>Flexbox</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+            <div class="p-4 pt-0">
+              <a href="#" class="btn btn-outline-info d-block">Live site URL</a>
+            </div>
+          </div>
+        </div>
+
+        <!---------------------------------------- caed-3 -------------------------------------------->
+        <div class="col-md-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-duration="2000">
+          <div class="card shadow">
+            <img src="images/IP-address-tracker.jpg" class="card-img-top" alt="IP-address-tracker">
+
+            <div class="card-body">
+              <h5 class="card-title fw-bold mb-2">IP address tracker</h5>
+              <p class="card-text h5">Users could be able to :</p>
+              <ul>
+                <li>View the optimal layout for each page depending on their device's screen size</li>
+                <li>See hover states for all interactive elements on the page</li>
+                <li>See their own IP address on the map on the initial page load</li>
+                <li>Search for any IP addresses or domains and see the key information and location</li>
+              </ul>
+              <p class="card-text h5">Built with :</p>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Web APIs > Fetch API</li>
+              </ul>
+            </div>
+
+            <div class="p-4 pt-0">
+              <a href="#" class="btn btn-outline-info d-block">Live site URL</a>
+            </div>
+
+          </div>
+        </div>
+
+        <!--------------------------------------- card-4 ----------------------------------------------------->
+        <div class="col-md-4 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-duration="1000">
+          <div class="card shadow">
+            <img src="images/IP-address-tracker.jpg" class="card-img-top" alt="IP-address-tracker">
+
+            <div class="card-body">
+              <h5 class="card-title fw-bold mb-2">IP address tracker</h5>
+              <p class="card-text h5">Users could be able to :</p>
+              <ul>
+                <li>View the optimal layout for each page depending on their device's screen size</li>
+                <li>See hover states for all interactive elements on the page</li>
+                <li>See their own IP address on the map on the initial page load</li>
+                <li>Search for any IP addresses or domains and see the key information and location</li>
+              </ul>
+              <p class="card-text h5">Built with :</p>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Web APIs > Fetch API</li>
+              </ul>
+            </div>
+
+            <div class="p-4 pt-0">
+              <a href="#" class="btn btn-outline-info d-block">Live site URL</a>
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+
+
+      </div>
+    </div>
 
   </main>
 
@@ -126,6 +274,7 @@
   <script src="js/all.min.js"></script>
   <script src="js/aos.js"></script>
   <script src="js/iconify.min.js"></script>
+  <script src="js/dark-mode-switch.min.js"></script>
 
   <script>
     AOS.init();
