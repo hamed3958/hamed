@@ -57,3 +57,17 @@
 [data-theme="dark"] .shadow {
   box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 30%) !important;
 }
+
+[data-theme="dark"] .text-muted {
+  --bs-text-opacity: 1;
+  color: #adbac5 !important;
+}
+
+[data-theme="dark"] .footer-links > a {
+  text-decoration: none;
+  color: #fbfbfbc0;
+}
+
+[data-theme="dark"] .footer-links > a:hover {
+  color: #fff !important;
+}

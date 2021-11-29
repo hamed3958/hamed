@@ -210,3 +210,13 @@ body {
   background-color: var(--sormei);
   border-color: var(--sormei);
 } */
+
+
+.footer-links > a {
+  text-decoration: none;
+  color: var(--sormei);
+}
+
+.footer-links > a:hover {
+  color: #000 !important;
+}
