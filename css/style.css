@@ -7,6 +7,21 @@ html,
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-family: "MontserratAlternates";
+  color: var(--sormei);
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
 @font-face {
   font-family: "MontserratAlternates";
   src: url(../fonts/MontserratAlternates-Regular.ttf);
@@ -25,8 +40,27 @@ html,
   font-weight: 700;
 }
 
-body {
-  font-family: "MontserratAlternates";
+@font-face {
+  font-family: "LaBelleAurore";
+  src: url(../fonts/LaBelleAurore-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Medium.ttf);
+  font-weight: 500;
 }
 
 :root {
@@ -34,7 +68,7 @@ body {
   --germez: #ea5455;
   --narenji: #f07b3f;
   --zard: #ffd460;
-  --tusi: #FBFBFB;
+  --tusi: #fbfbfb;
 }
 
 /*--------------------------navbar--------------------*/
@@ -62,8 +96,6 @@ body {
   transition: background-color 250ms;
   cursor: pointer;
 }
-
-
 
 .toggle-checkbox:checked ~ .toggle-slot {
   background-color: #374151;
@@ -156,38 +188,66 @@ body {
   transition: 0.4s;
 }
 
-.titr-small{
+.titr-small {
   font-weight: 500;
   font-size: 30px;
   color: var(--sormei);
   transition: 0.4s;
 }
 
-.glass{
-  margin-top: 50px;
-  background: rgba( 255, 255, 255, 0.25 );
+.glass {
+  background: rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
-  backdrop-filter: blur( 6px );
+  backdrop-filter: blur(6px);
   border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-sizing: border-box !important;
 }
-
 
 /*--------------------------------about-----------------------------*/
 
-#about{
+#about {
   height: 100vh;
 }
 
+.about-text{
+  font-family: "LaBelleAurore";
+  font-size: 26px;
+}
+
 .hamed-img {
-  width: 200px;
+  width: 230px;
   height: auto;
+}
+
+.loading:after {
+  content: " .";
+  animation: dots 1s steps(5, end) infinite;
+}
+
+@keyframes dots {
+  0%,
+  20% {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  40% {
+    color: var(--sormei);
+    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  60% {
+    text-shadow: 0.25em 0 0 var(--sormei), 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  80%,
+  100% {
+    text-shadow: 0.25em 0 0 var(--sormei), 0.5em 0 0 var(--sormei);
+  }
 }
 
 /*---------------------------------projects------------------------------*/
 
 .card {
-  background-color:var(--tusi);
+  background-color: var(--tusi);
   border-radius: 0.5rem;
   transition: 0.3s;
 }
@@ -196,27 +256,112 @@ body {
   box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 25%) !important;
 }
 
-.card:hover{
+.card:hover {
   box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 70%) !important;
 }
 
-/* btn-outline-dark {
-  color: var(--sormei) !important;
-  border-color: var(--sormei) !important;
+.card-title {
+  font-family: "Roboto";
+  font-weight: 500;
 }
 
-.btn-outline-dark:hover {
-  color: var(--tusi);
-  background-color: var(--sormei);
-  border-color: var(--sormei);
-} */
+ul {
+  padding-left: 1rem !important;
+  font-family: "Roboto";
+  font-weight: 300;
+}
 
+
+ul.b {
+  list-style-type: square;
+  font-size: 14px;
+}
+
+
+/*****************************************footer*****************************************/
+
+.footer-hr {
+  height: 5px !important;
+}
 
 .footer-links > a {
   text-decoration: none;
   color: var(--sormei);
+  transition: 0.3s;
+  font-family: "Roboto";
 }
 
 .footer-links > a:hover {
   color: #000 !important;
 }
+
+.scroll-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  display: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: var(--tusi);
+  background: rgba(45, 64, 89, 0.5);
+  line-height: 45px;
+}
+
+.copyi-right {
+  font-size: 12px;
+  font-family: "Roboto";
+  font-weight: 300;
+}
+
+
+/************************************************* media query********************************************/
+
+
+@media (max-width: 767.98px) {
+  .titr-normal {
+    font-size: 18px;
+  }
+
+  .titr-big {
+    font-size: 32px;
+  }
+
+  .titr-small {
+    font-size: 15px;
+  }
+
+  .about-text{
+    font-size: 18px;
+  }
+
+  .scroll-to-top {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    display: none;
+    width: 25px;
+    height: 25px;
+
+    line-height: 25px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .titr-normal {
+    font-size: 20px;
+  }
+
+  .titr-big {
+    font-size: 50px;
+  }
+
+  .titr-small {
+    font-size: 16px;
+  }
+
+  .about-text{
+    font-size: 22px;
+  }
+}
+

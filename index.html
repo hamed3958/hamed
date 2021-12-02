@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="css/dark-mode.css">
 </head>
 
-<body>
+<body id="page-top">
 
   <!------------------------------------------- header ------------------------------------------------------->
 
@@ -50,13 +50,13 @@
                 <a class="nav-link" aria-current="page" href="#"><i class="fas fa-home"></i></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#portfolio">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -84,21 +84,22 @@
 
     <!-------------------------------------------- cover ------------------------------------------->
 
-    <div class="cover py-5">
+    <section class="cover py-5">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 glass m-5 p-5" data-aos="fade-up-right">
+          <div class="col-sm-8">
 
+            <div class="glass m-5 p-5" data-aos="fade-up-right">
             <p class="titr-normal">Hi, I am</p>
             <h1 class="titr-big">Hamed Asadi Asl.</h1>
-            <p class="titr-small">
+            <p class="titr-small mt-3">
               < Front-end Web developer />
             </p>
-
+          </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
   </header>
 
@@ -109,18 +110,27 @@
     <!---------------------------------------------- about ----------------------------------------------->
 
     <section class="container my-5 d-flex align-items-center" id="about">
-      <div class="row mx-5 my-5">
+      <div class="row mx-md-5">
         <div class="col-md-8" data-aos="fade-right">
-          <h2 class="fw-bold mb-2">A bit about myself...</h2>
-          <p>Dear all, appreciate visiting my web page. I have a master degree in Civil Engineering (geotechnical
-            field). I'm so interested in web development. Starting with HTML, CSS and JavaScript, I kept putting many
-            efforts on learning novel technologies in this respect. It will be my proud if you check and view my sample
-            projects. Hope this website will make us getting in touch and collaborate. <br><br>
-            Sincerely Yours, <span class="fw-bold">Hamed</span></p>
+          <h2 class="fw-bold fs-1 mb-4" data-aos="fade-down">A bit about myself...</h2>
+          <p class="about-text">Dear all, appreciate visiting my website. I have a master degree in Civil Engineering
+            (geotechnical field). I'm so interested in web development. Furthermore, I am putting many efforts on
+            learning novel technologies in this respect. It will be my proud if you check and view my sample projects.
+            Hope this website will make us getting in touch and collaborate.</p>
+          <p class="mt-2 about-text">Sincerely Yours, <span class="fw-bold">Hamed</span></p>
+          
         </div>
-        <div class="col-md-4" data-aos="fade-up-left">
-          <img src="images/hamed.jpg" alt="hamed asadi asl" class="hamed-img img-fluid rounded float-end shadow">
+        <div class="col-md-4 mt-3 text-center" data-aos="fade-up-left">
+          <img src="images/hamed.jpg" alt="hamed asadi asl" class="hamed-img img-fluid rounded float-md-end shadow">
         </div>
+
+        <div class="col-md-12 text-center mt-3" data-aos="fade-up" data-aos-easing="linear">
+          <p class="mt-5 fs-1"><i class="fab fa-html5"></i>
+            <i class="fab fa-css3"></i> <i class="fab fa-js"></i> <i class="fab fa-bootstrap"></i> <i
+              class="fab fa-react"></i> <span class="loading fs-6">Lerning</span>
+          </p>
+        </div>
+
       </div>
     </section>
 
@@ -130,7 +140,7 @@
 
       <div class="row">
         <div class="col-md-12 my-5">
-          <h2 class="fw-bold mb-5" data-aos="fade-right">Portfolio</h2>
+          <h2 class="fw-bold mb-4" data-aos="fade-right">Portfolio</h2>
           <div data-aos="fade-up" data-aos-duration="1000">
             <p>Here are some examples of projects I have worked on as a portfolio.
               <br>
@@ -139,7 +149,7 @@
             <ul>
               <li>View the optimal layout for each page depending on their device's screen size (Responsive Web Design)
               </li>
-              <li>See hover states for all interactive elements on the page</li>
+              <li>See hover states for all interactive elements on any page</li>
             </ul>
           </div>
         </div>
@@ -147,7 +157,7 @@
         <!-------------------------------------------------- cards -------------------------------------------->
 
         <!---------------------------------------------- card-1 ----------------------------------------------->
-        <div class="col-md-4 d-flex align-items-stretch mt-5" data-aos="fade-up" data-aos-duration="1000">
+        <div class="col-md-3 d-flex align-items-stretch mt-5" data-aos="fade-up" data-aos-duration="1000">
           <div class="card shadow">
             <div class="ratio ratio-16x9">
               <video autoplay loop muted>
@@ -157,7 +167,7 @@
             </div>
 
             <div class="card-body">
-              <h5 class="card-title fw-bold mb-2">Social media dashboard with theme switch</h5>
+              <h5 class="card-title mb-2">Social media dashboard with theme switch</h5>
               <hr class="mx-4">
               <p class="card-text h6 text-muted">Features :</p>
               <ul>
@@ -165,8 +175,8 @@
                 <li>On page load, the numbers are counted visually</li>
               </ul>
 
-              <p class="card-text h6 text-muted">Built with :</p>
-              <ul>
+              <p class="card-text h6 text-muted"><i class="fas fa-code"></i> Built with :</p>
+              <ul class="b">
                 <li>HTML5</li>
                 <li>CSS</li>
                 <li>CSS Grid</li>
@@ -182,19 +192,19 @@
         </div>
 
         <!--------------------------------------- card-2 ------------------------------------------------------>
-        <div class="col-md-4 d-flex align-items-stretch mt-5" data-aos="fade-up" data-aos-duration="1500">
+        <div class="col-md-3 d-flex align-items-stretch mt-5" data-aos="fade-up" data-aos-duration="1500">
           <div class="card shadow">
-            <img src="images/faq-accordion-card.jpg" class="card-img-top" alt="faq-accordion-card">
+            <img src="images/faq-accordion-card.jpg" class="card-img-top" alt="faq-accordion-card" loading="lazy">
 
             <div class="card-body">
-              <h5 class="card-title fw-bold mb-2">The FAQ accordion card</h5>
+              <h5 class="card-title mb-2">The FAQ accordion card</h5>
               <hr class="mx-4">
               <p class="card-text h6 text-muted">Features :</p>
               <ul>
                 <li>Hide/Show the answer to a question when the question is clicked</li>
               </ul>
-              <p class="card-text h6 text-muted">Built with :</p>
-              <ul>
+              <p class="card-text h6 text-muted"><i class="fas fa-code"></i> Built with :</p>
+              <ul class="b">
                 <li>HTML5</li>
                 <li>CSS</li>
                 <li>Flexbox</li>
@@ -208,20 +218,20 @@
         </div>
 
         <!---------------------------------------- caed-3 -------------------------------------------->
-        <div class="col-md-4 d-flex align-items-stretch mt-5" data-aos="fade-up" data-aos-duration="2000">
+        <div class="col-md-3 d-flex align-items-stretch mt-5" data-aos="fade-up" data-aos-duration="2000">
           <div class="card shadow">
-            <img src="images/IP-address-tracker.jpg" class="card-img-top" alt="IP-address-tracker">
+            <img src="images/IP-address-tracker.jpg" class="card-img-top" alt="IP-address-tracker" loading="lazy">
 
             <div class="card-body">
-              <h5 class="card-title fw-bold mb-2">IP address tracker</h5>
+              <h5 class="card-title mb-2">IP address tracker</h5>
               <hr class="mx-4">
               <p class="card-text h6 text-muted">Features :</p>
               <ul>
                 <li>See own IP address on the map on the initial page load</li>
                 <li>Search for any IP addresses or domains and see the key information and location</li>
               </ul>
-              <p class="card-text h6 text-muted">Built with :</p>
-              <ul>
+              <p class="card-text h6 text-muted"><i class="fas fa-code"></i> Built with :</p>
+              <ul class="b">
                 <li>HTML5</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
@@ -237,19 +247,19 @@
         </div>
 
         <!--------------------------------------- card-4 ----------------------------------------------------->
-        <div class="col-md-4 d-flex align-items-stretch mt-5" data-aos="fade-up" data-aos-duration="1000">
+        <div class="col-md-3 d-flex align-items-stretch mt-5" data-aos="fade-up" data-aos-duration="1000">
           <div class="card shadow">
-            <img src="images/Testimonials-grid-sc.jpg" class="card-img-top" alt="web-delepor portfolio">
+            <img src="images/Testimonials-grid-sc.jpg" class="card-img-top" alt="web-delepor portfolio" loading="lazy">
 
             <div class="card-body">
-              <h5 class="card-title fw-bold mb-2">Testimonials grid section</h5>
+              <h5 class="card-title mb-2">Testimonials grid section</h5>
               <hr class="mx-4">
               <p class="card-text h6 text-muted">Features :</p>
               <ul>
                 <li>This testimonials grid section based on a CSS Grid</li>
               </ul>
-              <p class="card-text h6 text-muted">Built with :</p>
-              <ul>
+              <p class="card-text h6 text-muted"><i class="fas fa-code"></i> Built with :</p>
+              <ul class="b">
                 <li>HTML5</li>
                 <li>CSS</li>
               </ul>
@@ -263,7 +273,7 @@
         </div>
 
         <!---------------------------------------- card-5 ----------------------------------------------------->
-        <div class="col-md-4 d-flex align-items-stretch mt-5" data-aos="fade-up" data-aos-duration="1500">
+        <div class="col-md-3 d-flex align-items-stretch mt-5" data-aos="fade-up" data-aos-duration="1500">
           <div class="card shadow">
             <div class="ratio ratio-16x9">
               <video autoplay loop muted>
@@ -273,17 +283,17 @@
             </div>
 
             <div class="card-body">
-              <h5 class="card-title fw-bold mb-2">Shortly URL shortening API</h5>
+              <h5 class="card-title mb-2">Shortly URL shortening API</h5>
               <hr class="mx-4">
-              <p class="card-text h6">Features :</p>
+              <p class="card-text h6 text-muted">Features :</p>
               <ul>
                 <li>Shorten any valid URL</li>
                 <li>See a list of their shortened links, even after refreshing the browser</li>
                 <li>Copy the shortened link to their clipboard in a single click</li>
                 <li>Receive an error message when the form is submitted if the input field is empty</li>
               </ul>
-              <p class="card-text h6">Built with :</p>
-              <ul>
+              <p class="card-text h6 text-muted"><i class="fas fa-code"></i> Built with :</p>
+              <ul class="b">
                 <li>HTML5</li>
                 <li>Bootstrap - CSS framework</li>
                 <li>JavaScript</li>
@@ -299,12 +309,12 @@
         </div>
 
         <!----------------------------------------- card-6 ------------------------------------------------->
-        <div class="col-md-4 d-flex align-items-stretch mt-5" data-aos="fade-up" data-aos-duration="2000">
+        <div class="col-md-3 d-flex align-items-stretch mt-5" data-aos="fade-up" data-aos-duration="2000">
           <div class="card shadow">
-            <img src="images/TipCalculatorApp.jpg" class="card-img-top" alt="web-delepor portfolio">
+            <img src="images/TipCalculatorApp.jpg" class="card-img-top" alt="web-delepor portfolio" loading="lazy">
 
             <div class="card-body">
-              <h5 class="card-title fw-bold mb-2">Tip calculator app solution</h5>
+              <h5 class="card-title mb-2">Tip calculator app solution</h5>
               <hr class="mx-4">
               <p class="card-text h6 text-muted">Features :</p>
               <ul>
@@ -312,8 +322,8 @@
                 <li>Control font size for when characters become too large</li>
                 <li>Receive an error message when need to declare the inputs</li>
               </ul>
-              <p class="card-text h6 text-muted">Built with :</p>
-              <ul>
+              <p class="card-text h6 text-muted"><i class="fas fa-code"></i> Built with :</p>
+              <ul class="b">
                 <li>HTML5</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
@@ -328,19 +338,19 @@
         </div>
 
         <!--------------------------------------- card-7 ----------------------------------------------------->
-        <div class="col-md-4 d-flex align-items-stretch mt-5" data-aos="fade-up" data-aos-duration="1000">
+        <div class="col-md-3 d-flex align-items-stretch mt-5" data-aos="fade-up" data-aos-duration="1000">
           <div class="card shadow">
-            <img src="images/fylo-data-storage.jpg" class="card-img-top" alt="web-delepor portfolio">
+            <img src="images/fylo-data-storage.jpg" class="card-img-top" alt="web-delepor portfolio" loading="lazy">
 
             <div class="card-body">
-              <h5 class="card-title fw-bold mb-2">Fylo data storage component</h5>
+              <h5 class="card-title mb-2">Data storage component</h5>
               <hr class="mx-4">
               <p class="card-text h6 text-muted">Features :</p>
               <ul>
                 <li>Animate the progress bar when page loaded</li>
               </ul>
-              <p class="card-text h6 text-muted">Built with :</p>
-              <ul>
+              <p class="card-text h6 text-muted"><i class="fas fa-code"></i> Built with :</p>
+              <ul class="b">
                 <li>HTML5</li>
                 <li>CSS</li>
               </ul>
@@ -354,12 +364,12 @@
         </div>
 
         <!---------------------------------------- card-8 ----------------------------------------------------->
-        <div class="col-md-4 d-flex align-items-stretch mt-5" data-aos="fade-up" data-aos-duration="1500">
+        <div class="col-md-3 d-flex align-items-stretch mt-5" data-aos="fade-up" data-aos-duration="1500">
           <div class="card shadow">
-            <img src="images/TipCalculatorApp.jpg" class="card-img-top" alt="web-delepor portfolio">
+            <img src="images/TipCalculatorApp.jpg" class="card-img-top" alt="web-delepor portfolio" loading="lazy">
 
             <div class="card-body">
-              <h5 class="card-title fw-bold mb-2">Shortly URL shortening API</h5>
+              <h5 class="card-title mb-2">Shortly URL shortening API</h5>
               <hr class="mx-4">
               <p class="card-text h6 text-muted">Features :</p>
               <ul>
@@ -368,8 +378,8 @@
                 <li>Copy the shortened link to their clipboard in a single click</li>
                 <li>Receive an error message when the form is submitted if the input field is empty</li>
               </ul>
-              <p class="card-text h6 text-muted">Built with :</p>
-              <ul>
+              <p class="card-text h6 text-muted"><i class="fas fa-code"></i> Built with :</p>
+              <ul class="b">
                 <li>HTML5</li>
                 <li>Bootstrap - CSS framework</li>
                 <li>JavaScript</li>
@@ -385,12 +395,12 @@
         </div>
 
         <!----------------------------------------- card-9 ------------------------------------------------->
-        <div class="col-md-4 d-flex align-items-stretch mt-5" data-aos="fade-up" data-aos-duration="2000">
+        <div class="col-md-3 d-flex align-items-stretch mt-5" data-aos="fade-up" data-aos-duration="2000">
           <div class="card shadow">
-            <img src="images/TipCalculatorApp.jpg" class="card-img-top" alt="web-delepor portfolio">
+            <img src="images/TipCalculatorApp.jpg" class="card-img-top" alt="web-delepor portfolio" loading="lazy">
 
             <div class="card-body">
-              <h5 class="card-title fw-bold mb-2">Tip calculator app solution</h5>
+              <h5 class="card-title mb-2">Tip calculator app solution</h5>
               <hr class="mx-4">
               <p class="card-text h6 text-muted">Features :</p>
               <ul>
@@ -398,8 +408,8 @@
                 <li>Control font size for when characters become too large</li>
                 <li>Receive an error message when need to declare the inputs</li>
               </ul>
-              <p class="card-text h6 text-muted">Built with :</p>
-              <ul>
+              <p class="card-text h6 text-muted"><i class="fas fa-code"></i> Built with :</p>
+              <ul class="b">
                 <li>HTML5</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
@@ -423,41 +433,50 @@
 
   </main>
 
-<hr>
 
 
-<!------------------------------------------------ footer ---------------------------------------------->
 
-  <footer>
-    <div class="container mt-5">
+  <!------------------------------------------------ footer ---------------------------------------------->
+
+  <footer id="contact">
+    <div class="container mt-4">
+
       <div class="row">
-        <h2 class="text-center mb-3 fw-bold">Contact me</h2>
+
+        <div class="col-md-12">
+          <hr class="footer-hr">
+        </div>
+        <h2 class="text-center my-3 fw-bold">Contact me</h2>
         <div class="col-md-6">
-          <a href="tel:+989143000913"><i class="fas fa-phone"></i></i> +98 914 3000 913</a>
-          <br>
-          <a href="mailto:hamed.3958@gmail.com"><i class="fas fa-envelope"></i> hamed.3958@gmail.com</a>
-          <br>
-          <a href=""><i class="fas fa-map-marker-alt"></i> Iran, East Azerbaijan Province, Tabriz</a>
+          <p class="footer-links text-muted"><a href="tel:+989143000913"><i class="fas fa-phone"></i></i> +98 914 3000
+              913</a></p>
+          <p class="footer-links text-muted"><a href="mailto:hamed.3958@gmail.com"><i class="fas fa-envelope"></i>
+              hamed.3958@gmail.com</a></p>
+          <p class="footer-links text-muted"><a href=""><i class="fas fa-map-marker-alt"></i> Iran, East Azerbaijan
+              Province,
+              Tabriz</a></p>
         </div>
         <div class="col-md-6 footer-links">
-          <a href="" class="float-end fs-1 m-2"><i class="fab fa-linkedin"></i></a>
-          <a href="" class="float-end fs-1 m-2"><i class="fab fa-github"></i></a>
-          <a href="https://www.facebook.com/hamed.asadiasl/" class="float-end fs-1 m-2"><i class="fab fa-facebook"></i></a>
-          <a href="" class="float-end fs-1 m-2"><i class="fab fa-instagram"></i></a>
-         
+          <a href="" class="float-end fs-1 m-2 text-muted"><i class="fab fa-linkedin"></i></a>
+          <a href="" class="float-end fs-1 m-2 text-muted"><i class="fab fa-github"></i></a>
+          <a href="https://www.facebook.com/hamed.asadiasl/" class="float-end fs-1 m-2 text-muted"><i
+              class="fab fa-facebook"></i></a>
+          <a href="" class="float-end fs-1 m-2 text-muted"><i class="fab fa-instagram"></i></a>
+
           <!-- <i class="fab fa-telegram"></i>
           <i class="fab fa-stack-overflow"></i>
           <i class="fab fa-whatsapp"></i>
           <i class="fab fa-skype"></i> -->
         </div>
 
-        <div class="col-md-12">
-          <hr>
-          <p class="fs-6 mb-0 text-muted"><i class="far fa-copyright"></i> Hamed Asadi Asl 2022</p>
-        </div>
+        <hr class="mb-0">
+        <p class="mb-0 ms-3 text-muted lh-sm copyi-right"><i class="far fa-copyright"></i> HAMED ASADI ASL 2022</p>
+        
       </div>
 
     </div>
+    <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-chevron-up"></i></a>
+    
   </footer>
 
   <!-- *****************************************script*************************************** -->
