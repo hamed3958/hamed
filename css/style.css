@@ -251,10 +251,24 @@ body {
 
 /*---------------------------------projects------------------------------*/
 
+.carousel-control-next, .carousel-control-prev {
+  width: auto;
+  height: auto; 
+}
+
+.fa-chevron-left , .fa-chevron-right{
+  color: var(--sormei);
+}
+
 .card {
   background-color: var(--tusi);
   border-radius: 0.5rem;
   transition: 0.3s;
+  height: 43rem !important;
+}
+
+.carousel-indicators [data-bs-target]{
+  background-color: var(--sormei);
 }
 
 .shadow {
@@ -313,6 +327,7 @@ ul.b {
   color: var(--tusi);
   background: rgba(45, 64, 89, 0.5);
   line-height: 45px;
+  z-index: 1;
 }
 
 .copyi-right {
@@ -347,9 +362,11 @@ ul.b {
     display: none;
     width: 25px;
     height: 25px;
-
     line-height: 25px;
+    z-index: 1;
   }
+
+  
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -368,4 +385,6 @@ ul.b {
   .about-text {
     font-size: 22px;
   }
+
+  
 }
