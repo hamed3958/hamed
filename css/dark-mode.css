@@ -29,11 +29,11 @@
 
 [data-theme="dark"] .glass {
   margin-top: 50px;
-  background: rgba(0, 0, 0, 0.18);
+  background: rgba(0, 0, 0, 0.28);
   box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
   backdrop-filter: blur(6px);
   border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.18);
+  border: none;
 }
 
 [data-theme="dark"] .cover {
