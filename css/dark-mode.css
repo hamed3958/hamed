@@ -58,16 +58,18 @@
   box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 30%) !important;
 }
 
+[data-theme="dark"] .slider-shadow {
+  -moz-box-shadow: inset 0 0 5px #000;
+  -webkit-box-shadow: inset 0 0 5px #000;
+  box-shadow: inset 0 0 5px #000;
+}
+
 [data-theme="dark"] .fa-chevron-left{
   color: #fbfbfb;
 }
 
 [data-theme="dark"] .fa-chevron-right{
   color: #fbfbfb;
-}
-
-[data-theme="dark"] .carousel-indicators [data-bs-target]{
-  background-color: #fbfbfb !important;
 }
 
 [data-theme="dark"] .repository-btn:hover{
