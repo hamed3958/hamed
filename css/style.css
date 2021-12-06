@@ -251,24 +251,11 @@ body {
 
 /*---------------------------------projects------------------------------*/
 
-.carousel-control-next, .carousel-control-prev {
-  width: auto;
-  height: auto; 
-}
-
-.fa-chevron-left , .fa-chevron-right{
-  color: var(--sormei);
-}
-
 .card {
   background-color: var(--tusi);
   border-radius: 0.5rem;
   transition: 0.3s;
   height: 43rem !important;
-}
-
-.carousel-indicators [data-bs-target]{
-  background-color: var(--sormei);
 }
 
 .shadow {
@@ -365,8 +352,6 @@ ul.b {
     line-height: 25px;
     z-index: 1;
   }
-
-  
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -385,30 +370,19 @@ ul.b {
   .about-text {
     font-size: 22px;
   }
-
-  
 }
 
-
-
-
-
-
-
-
-
-
-
+/**************************************************---------- card slider ---------------**********************************/
 
 #contain {
-  
-  display: grid ;
-  place-items: center
+  display: grid;
+  place-items: center;
+  height: auto;
 }
 
 #slider-container {
   height: auto;
-  width: 85vw;
+  width: 95%;
   max-width: 1400px;
 
   position: relative;
@@ -416,45 +390,38 @@ ul.b {
   padding: 20px;
 }
 
-#slider-container .bt {
+.bt {
   position: absolute;
   top: calc(50% - 30px);
-  /* height: 30px;
-  width: 30px;
-  border-left: 8px solid pink;
-  border-top: 8px solid pink; */
 }
 
-#slider-container .bt:hover {
+.bt:hover {
   transform: scale(1.2);
 }
 
-#slider-container .bt.inactive {
-  border-color: rgb(153, 121, 126)
+.bt:first-of-type {
+  z-index: 1;
+  left: 5px;
+  cursor: pointer;
 }
 
-#slider-container .bt:first-of-type {
-  
-  left: 15px
-}
-
-#slider-container .bt:last-of-type {
-  
-  right: 15px;
+ .bt:last-of-type {
+  z-index: 1;
+  right: 5px;
+  cursor: pointer;
 }
 
 #slider-container #slider {
   display: flex;
   width: 1000%;
-  height: 100%; 
-  transition: all .5s;
+  height: 100%;
+  transition: all 0.5s;
 }
 
 #slider-container #slider .slide {
   height: 90%;
   margin: auto 10px;
-  
-  
+
   display: grid;
   place-items: center;
 }
@@ -465,33 +432,25 @@ ul.b {
 }
 
 @media only screen and (min-width: 1100px) {
-
   #slider-container #slider .slide {
     width: calc(2.5% - 20px);
   }
-
 }
 
 @media only screen and (max-width: 1100px) {
-
   #slider-container #slider .slide {
     width: calc(3.3333333% - 20px);
   }
-
 }
 
 @media only screen and (max-width: 900px) {
-
   #slider-container #slider .slide {
     width: calc(5% - 20px);
   }
-
 }
 
 @media only screen and (max-width: 550px) {
-
   #slider-container #slider .slide {
     width: calc(10% - 20px);
   }
-
 }

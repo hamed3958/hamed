@@ -89,7 +89,7 @@ var containerWidth = container.offsetWidth;
 var prevKeyActive = false;
 var nextKeyActive = true;
 
-window.addEventListener("resize", checkWidth);
+window.addEventListener("load", checkWidth);
 
 function checkWidth() {
     containerWidth = container.offsetWidth;
