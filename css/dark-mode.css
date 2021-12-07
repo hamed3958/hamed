@@ -28,9 +28,7 @@
 }
 
 [data-theme="dark"] .glass {
-  margin-top: 50px;
   background: rgba(0, 0, 0, 0.28);
-  box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
   backdrop-filter: blur(6px);
   border-radius: 10px;
   border: none;
@@ -39,10 +37,26 @@
 [data-theme="dark"] .cover {
   width: 100%;
   height: auto;
-  background: url(../images/cover.jpg);
+  background: url(../images/programming-dark.svg);
   background-size: cover;
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top;
 }
+
+@media (max-width: 767.98px) {
+  [data-theme="dark"] .cover {
+    padding: 20px 0;
+    width: 100%;
+    height: auto;
+    background: url(../images/programming-dark.svg);
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 0 70px;
+  }
+}
+
 
 [data-theme="dark"] .card {
   background-color: var(--sormei);

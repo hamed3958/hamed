@@ -174,9 +174,11 @@ body {
 .cover {
   width: 100%;
   height: auto;
-  background: url(../images/cover2.jpg);
+  background: url(../images/programming.svg);
   background-size: cover;
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 .titr-normal {
@@ -201,12 +203,10 @@ body {
 }
 
 .glass {
-  background: rgba(251, 251, 251, 0.3);
-  box-shadow: 0 8px 32px 0 rgb(251 251 251 / 10%);
+  background: rgba(255, 255, 255, 0.411);
   backdrop-filter: blur(6px);
   border-radius: 10px;
   border: none;
-  box-sizing: border-box !important;
 }
 
 /*--------------------------------about-----------------------------*/
@@ -395,6 +395,17 @@ ul.b {
 /************************************************* media query********************************************/
 
 @media (max-width: 767.98px) {
+  .cover {
+    padding: 20px 0;
+    width: 100%;
+    height: auto;
+    background: url(../images/programming.svg);
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 0 70px;
+  }
+
   .titr-normal {
     font-size: 18px;
   }
