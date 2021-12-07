@@ -45,16 +45,16 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-              <li class="nav-item">
+              <li class="nav-item pe-2">
                 <a class="nav-link" aria-current="page" href="#"><i class="fas fa-home"></i></a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item pe-2">
                 <a class="nav-link" href="#about">About</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item pe-2">
                 <a class="nav-link" href="#portfolio">Portfolio</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item pe-2">
                 <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
@@ -82,7 +82,7 @@
 
     <!-------------------------------------------- cover ------------------------------------------->
 
-    <section class="cover py-md-5 ">
+    <section class="cover py-md-5 border-bottom border-5 border-secondary">
       <div class="container">
         <div class="row">
           <div class="col-sm-8">
@@ -107,7 +107,7 @@
 
     <!---------------------------------------------- about ----------------------------------------------->
 
-    <section class="container my-5 d-flex align-items-center" id="about">
+    <section class="container py-5 d-flex align-items-center" id="about">
       <div class="row mx-md-5">
         <div class="col-md-8" data-aos="fade-right">
           <h2 class="fw-bold fs-1 mb-4" data-aos="fade-down">A bit about myself...</h2>
@@ -122,11 +122,37 @@
           <img src="images/hamed.jpg" alt="hamed asadi asl" class="hamed-img img-fluid rounded float-md-end shadow">
         </div>
 
-        <div class="col-md-12 text-center mt-3" data-aos="fade-up" data-aos-easing="linear">
-          <p class="mt-5 fs-1"><i class="fab fa-html5"></i>
-            <i class="fab fa-css3"></i> <i class="fab fa-js"></i> <i class="fab fa-bootstrap"></i> <i
-              class="fab fa-git-alt"></i> <i class="fab fa-react"></i> <span class="loading fs-6">Lerning</span>
-          </p>
+        <div class="col-md-12 text-center mt-5 fs-1">
+
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="text-muted html-icon"
+            data-bs-toggle="tooltip" data-bs-placement="top" title="HTML: HyperText Markup Language" data-aos="fade-up"
+            data-aos-easing="linear" data-aos-duration="500"><i class="fab fa-html5"></i></a>
+
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="text-muted css-icon"
+            data-bs-toggle="tooltip" data-bs-placement="bottom" title="CSS: Cascading Style Sheets
+            " data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000"><i class="fab fa-css3"></i></a>
+
+          <a href="https://www.javascript.com/" target="_blank" class="text-muted js-icon" data-bs-toggle="tooltip"
+            data-bs-placement="top" title="JavaScript:
+             Programming language" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500"><i
+              class="fab fa-js"></i></a>
+
+          <a href="https://getbootstrap.com/" target="_blank" class="text-muted boots-icon" data-bs-toggle="tooltip"
+            data-bs-placement="bottom" title="Bootstrap: Front-end framework" data-aos="fade-up"
+            data-aos-easing="linear" data-aos-duration="2000"><i class="fab fa-bootstrap"></i></a>
+
+          <a href="https://git-scm.com/" target="_blank" class="text-muted git-icon" data-bs-toggle="tooltip"
+            data-bs-placement="top" title="Git: Software" data-aos="fade-up" data-aos-easing="linear"
+            data-aos-duration="2500"><i class="fab fa-git-alt"></i></a>
+
+          <a href="https://reactjs.org/" target="_blank" class="text-muted react-icon" data-bs-toggle="tooltip"
+            data-bs-placement="bottom" title="React: JavaScript library" data-aos="fade-up" data-aos-easing="linear"
+            data-aos-duration="3000"><i class="fab fa-react"></i></a>
+
+          <span class="loading fs-6" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top"
+            title="Gain more experience in programming :)" data-aos="fade-up" data-aos-easing="linear"
+            data-aos-duration="3000">Learning</span>
+
         </div>
 
       </div>
@@ -155,10 +181,10 @@
       <!------------------------------------------ card slider -------------------------------------------->
 
       <div id="contain" class="row" data-aos="fade-up" data-aos-duration="1500">
-        <div id="slider-container" class="rounded-3 slider-shadow bg-light">
+        <div id="slider-container" class=" slider-bg" >
           <span onclick="slideRight()" class="slider-btn"><i class="fas fa-chevron-left fa-2x"></i></span>
 
-          <div id="slider">
+          <div id="slider" class="">
 
             <!--------------------------------------- card-1 (dark theme) ------------------------------------------>
             <div class="slide card shadow d-flex align-items-stretch">
