@@ -1,20 +1,14 @@
 # HamedAsadiAsl.ir
 
+This is my personal site.
+
 ### Screenshot
 
-![my personal web site](hamed-web.png)
+![my personal web site](hamed-web.jpg)
 
 ## Links
 
-- Live Site URL: [hamedasadiasl.ir](https://hamed3958.github.io/shortly-URL/)
-
-### Built with
-
-- HTML5
-- CSS
-- JavaScript
-- Flexbox
-- [Bootstrap](https://getbootstrap.com/) - CSS framework
+- Live Site URL: [hamedasadiasl](https://hamed3958.github.io/hamed/)
 
 
 ## Author
