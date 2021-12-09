@@ -72,11 +72,12 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 
 // card slider
 
+['load', 'resize'].forEach(function (event) { window.addEventListener(event, checkWidth); });
+
 var container = document.getElementById('contain')
 var slider = document.getElementById('slider');
 var slides = document.getElementsByClassName('slide').length;
 var buttons = document.getElementsByClassName('slider-btn');
-
 
 var currentPosition = 0;
 var currentMargin = 0;
@@ -86,13 +87,10 @@ var containerWidth = container.offsetWidth;
 var prevKeyActive = false;
 var nextKeyActive = true;
 
-window.addEventListener("load", checkWidth);
-window.addEventListener("resize", checkWidth);
-
 function checkWidth() {
+  containerWidth = container.offsetWidth;
   buttons[0].classList.add('inactive');
   setParams(containerWidth);
-
 }
 
 function setParams(w) {

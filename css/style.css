@@ -272,6 +272,7 @@ body {
   border-radius: 0.5rem;
   transition: 0.3s;
   height: 43rem !important;
+  border: none;
 }
 
 .shadow {
@@ -373,19 +374,11 @@ ul.b {
 
 /*****************************************footer*****************************************/
 
-.footer-hr {
-  height: 5px !important;
-}
-
 .footer-links > a {
   text-decoration: none;
   color: var(--sormei);
   transition: 0.3s;
   font-family: "Roboto";
-}
-
-.footer-links > a:hover {
-  color: #000 !important;
 }
 
 .scroll-to-top {
@@ -408,15 +401,38 @@ ul.b {
   font-weight: 300;
 }
 
+.linkdin-icon:hover {
+  color: #0072b1 !important;
+}
+
+.github-icon:hover {
+  color: #171515 !important;
+}
+
+.fb-icon:hover {
+  color: #3b5998 !important;
+}
+
+.insta-icon:hover {
+  color: #cd486b !important;
+}
+
+.call-icon:hover {
+  color: #128c7e !important;
+}
+
+.gmail-icon:hover {
+  color: #ea5455 !important;
+}
+
 /************************************************* media query********************************************/
 
 @media (max-width: 767.98px) {
-
-  .navbar{
+  .navbar {
     padding: 1rem 0;
   }
 
-  .navbar-expand-md{
+  .navbar-expand-md {
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
     border-radius: 10px;
   }
@@ -425,34 +441,34 @@ ul.b {
     border-color: rgba(0, 0, 0, 0.25) !important;
   }
 
-  .navbar-toggler{
-    margin-left: 0.5rem; 
+  .navbar-toggler {
+    margin-left: 0.5rem;
   }
 
-  .mobile-fix{
+  .mobile-fix {
     position: absolute;
     top: 1.3rem;
     right: 0.6rem;
   }
 
-  .nav-item{
+  .nav-item {
     margin-top: 1rem;
   }
 
-  .nav-link{
+  .nav-link {
     font-weight: 500;
     font-size: 20px;
   }
 
   .cover {
+    min-height: 70vh;
     padding: 20px 0;
     width: 100%;
-    height: auto;
     background: url(../images/programming.svg);
     background-size: contain;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: 0 70px;
+    background-position: 0 50vh;
   }
 
   .titr-normal {
@@ -460,7 +476,7 @@ ul.b {
   }
 
   .titr-big {
-    font-size: 32px;
+    font-size: 44px;
   }
 
   .titr-small {
@@ -480,14 +496,30 @@ ul.b {
     right: 10px;
     bottom: 10px;
     display: none;
-    width: 25px;
-    height: 25px;
-    line-height: 25px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
     z-index: 1;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .cover {
+    min-height: 100vh;
+    padding: 20px 0;
+    width: 100%;
+    background: url(../images/programming.svg);
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 0 45vh;
+  }
+
+  .glass {
+    margin-top: 0 !important;
+  }
+
   .titr-normal {
     font-size: 20px;
   }
