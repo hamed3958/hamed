@@ -7,6 +7,10 @@
   background-color: #2d4059 !important;
 }
 
+/* [data-theme="dark"] .bg-lighter {
+  background-color: #344966 !important;
+} */
+
 /*--------------------------------nav------------------------------*/
 
 [data-theme="dark"] .navbar-light .navbar-nav .nav-link {
@@ -63,12 +67,46 @@
 
 /*--------------------------------protfolio------------------------------*/
 
+[data-theme="dark"] .html-icon:hover {
+  color: #e65100 !important;
+}
+
+[data-theme="dark"] .css-icon:hover {
+  color: #0277bd !important;
+}
+
+[data-theme="dark"] .js-icon:hover {
+  color: #ffd600 !important;
+}
+
+[data-theme="dark"] .boots-icon:hover {
+  color: #673ab7 !important;
+}
+
+[data-theme="dark"] .git-icon:hover {
+  color: #f4511e !important;
+}
+
+[data-theme="dark"] .react-icon:hover {
+  color: #80deea !important;
+}
+
 [data-theme="dark"] .loading:after {
   content: " .";
   animation: dark-dots 1s steps(5, end) infinite;
 }
 
 /*--------------------------------card------------------------------*/
+
+[data-theme="dark"] .slider-bg {
+  background: rgb(229, 229, 229);
+  background: radial-gradient(
+    circle,
+    rgba(229, 229, 229, 0) 0%,
+    rgba(52, 73, 102, 1) 50%,
+    rgba(45, 64, 89, 1) 100%
+  );
+}
 
 [data-theme="dark"] .card {
   background-color: var(--sormei);
@@ -127,7 +165,21 @@
   color: #0a58ca;
 }
 
-/*---------------------------media query (dark)---------------------------*/
+/* ------------------------- media query (dark) ------------------------- */
+
+[data-theme="dark"] .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.25) !important;
+}
+
+[data-theme="dark"] .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.55)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+[data-theme="dark"] .navbar-toggler:focus {
+  box-shadow: 0 0 0 0.25rem #e5e5e5a6;
+}
+
+/*--------------------------- animation (dark)---------------------------*/
 
 @keyframes dark-dots {
   0%,
