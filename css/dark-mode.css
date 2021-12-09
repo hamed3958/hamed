@@ -52,19 +52,6 @@
   background-position: top;
 }
 
-@media (max-width: 767.98px) {
-  [data-theme="dark"] .cover {
-    padding: 20px 0;
-    width: 100%;
-    height: auto;
-    background: url(../images/programming-dark.svg);
-    background-size: contain;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: 0 70px;
-  }
-}
-
 /*--------------------------------protfolio------------------------------*/
 
 [data-theme="dark"] .html-icon:hover {
@@ -177,6 +164,32 @@
 
 [data-theme="dark"] .navbar-toggler:focus {
   box-shadow: 0 0 0 0.25rem #e5e5e5a6;
+}
+
+@media (max-width: 767.98px) {
+  [data-theme="dark"] .cover {
+    min-height: 70vh;
+    padding: 20px 0;
+    width: 100%;
+    background: url(../images/programming-dark.svg);
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 0 50vh;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  [data-theme="dark"] .cover {
+    min-height: 100vh;
+    padding: 20px 0;
+    width: 100%;
+    background: url(../images/programming-dark.svg);
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 0 45vh;
+  }
 }
 
 /*--------------------------- animation (dark)---------------------------*/
