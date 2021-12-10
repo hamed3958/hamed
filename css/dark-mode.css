@@ -109,12 +109,12 @@
   transition: 0.3s;
 }
 
-[data-theme="dark"] .card:hover {
-  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 100%) !important;
+[data-theme="dark"] .shadow {
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 25%) !important;
 }
 
-[data-theme="dark"] .shadow {
-  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 30%) !important;
+[data-theme="dark"] .card:hover {
+  box-shadow: 0 0.5rem 1rem -10px rgb(0 0 0 / 50%) !important;
 }
 
 [data-theme="dark"] .slider-shadow {
