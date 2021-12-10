@@ -74,8 +74,16 @@
   color: #f4511e !important;
 }
 
+[data-theme="dark"] .npm-icon:hover{
+  color: #CC3534 !important;
+}
+
 [data-theme="dark"] .react-icon:hover {
   color: #80deea !important;
+}
+
+[data-theme="dark"] .sass-icon:hover{
+  color: #cc6699 !important;
 }
 
 [data-theme="dark"] .loading:after {
@@ -139,10 +147,6 @@
   color: #fbfbfbc0;
 }
 
-[data-theme="dark"] .footer-links > a:hover {
-  color: #fff !important;
-}
-
 [data-theme="dark"] .scroll-to-top {
   color: rgba(45, 64, 89);
   background: rgba(251, 251, 251, 0.5);
@@ -150,6 +154,30 @@
 
 [data-theme="dark"] .scroll-to-top:hover {
   color: #0a58ca;
+}
+
+[data-theme="dark"] .linkdin-icon:hover {
+  color: #0072b1 !important;
+}
+
+[data-theme="dark"] .github-icon:hover {
+  color: #171515 !important;
+}
+
+[data-theme="dark"] .fb-icon:hover {
+  color: #3b5998 !important;
+}
+
+[data-theme="dark"] .insta-icon:hover {
+  color: #cd486b !important;
+}
+
+[data-theme="dark"] .call-icon:hover {
+  color: #128c7e !important;
+}
+
+[data-theme="dark"] .gmail-icon:hover {
+  color: #ea5455 !important;
 }
 
 /* ------------------------- media query (dark) ------------------------- */

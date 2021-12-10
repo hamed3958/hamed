@@ -256,8 +256,16 @@ body {
   color: #f4511e !important;
 }
 
+.npm-icon:hover{
+  color: #CC3534 !important;
+}
+
 .react-icon:hover {
   color: #80deea !important;
+}
+
+.sass-icon:hover{
+  color: #cc6699 !important;
 }
 
 .loading:after {
