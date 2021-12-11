@@ -18,7 +18,11 @@
 }
 
 [data-theme="dark"] .nav-link:hover {
-  color: rgb(250, 250, 250) !important;
+  color: #e5e5e5 !important;
+}
+
+[data-theme="dark"] .hvr-underline-from-left:before {
+  background: #e5e5e5;
 }
 
 /*--------------------------------cover------------------------------*/
@@ -52,6 +56,11 @@
   background-position: top;
 }
 
+[data-theme="dark"] .swiper-pagination-bullet-active {
+  background: #e5e5e5 !important;
+  opacity: var(--swiper-pagination-bullet-opacity, 0.5) !important;
+}
+
 /*--------------------------------protfolio------------------------------*/
 
 [data-theme="dark"] .html-icon:hover {
@@ -74,15 +83,15 @@
   color: #f4511e !important;
 }
 
-[data-theme="dark"] .npm-icon:hover{
-  color: #CC3534 !important;
+[data-theme="dark"] .npm-icon:hover {
+  color: #cc3534 !important;
 }
 
 [data-theme="dark"] .react-icon:hover {
   color: #80deea !important;
 }
 
-[data-theme="dark"] .sass-icon:hover{
+[data-theme="dark"] .sass-icon:hover {
   color: #cc6699 !important;
 }
 
@@ -105,7 +114,6 @@
 
 [data-theme="dark"] .card {
   background-color: var(--sormei);
-  border-radius: 0.5rem;
   transition: 0.3s;
 }
 
@@ -117,22 +125,18 @@
   box-shadow: 0 0.5rem 1rem -10px rgb(0 0 0 / 50%) !important;
 }
 
+[data-theme="dark"] .swiper-button-next {
+  color: #e5e5e5 !important;
+}
+
+[data-theme="dark"] .swiper-button-prev {
+  color: #e5e5e5 !important;
+}
+
 [data-theme="dark"] .slider-shadow {
   -moz-box-shadow: inset 0 0 5px #000;
   -webkit-box-shadow: inset 0 0 5px #000;
   box-shadow: inset 0 0 5px #000;
-}
-
-[data-theme="dark"] .fa-chevron-left {
-  color: #fbfbfb;
-}
-
-[data-theme="dark"] .fa-chevron-right {
-  color: #fbfbfb;
-}
-
-[data-theme="dark"] .repository-btn:hover {
-  box-shadow: 0px 5px 8px #000;
 }
 
 /*--------------------------------footer------------------------------*/
