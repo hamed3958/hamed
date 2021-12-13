@@ -314,11 +314,17 @@ body {
 .card {
   background-color: var(--tusi);
   border-radius: 0.5rem;
-  transition: 0.5s;
+  transition: 0.3s !important;
   height: 43rem !important;
   border: none;
   max-width: 30% !important;
   text-align: start !important;
+}
+
+.card-body {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .shadow {
@@ -504,14 +510,14 @@ ul.b {
   }
 
   .cover {
-    min-height: 70vh;
+    min-height: 80vh;
     padding: 20px 0;
     width: 100%;
     background: url(../images/programming.svg);
     background-size: contain;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: 0 50vh;
+    background-position: 0 60vh;
   }
 
   .titr-normal {

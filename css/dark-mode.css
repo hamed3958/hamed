@@ -200,14 +200,14 @@
 
 @media (max-width: 767.98px) {
   [data-theme="dark"] .cover {
-    min-height: 70vh;
+    min-height: 80vh;
     padding: 20px 0;
     width: 100%;
     background: url(../images/programming-dark.svg);
     background-size: contain;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: 0 50vh;
+    background-position: 0 60vh;
   }
 }
 
